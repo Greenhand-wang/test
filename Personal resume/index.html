@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/resume.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="shortcut icon" href="free.ico">
+		<link rel="stylesheet" href="./css/style.css" />
+        <title>个人简历</title>  
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/vue.js"></script> 
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/react_resune.js"></script>   
+    </head>
+      <body>
+        <div id="resume" class="col-md-12" style="height: 100%;overflow-y: auto;">
+            <div class="col-md-12 resume" style="padding: 0;height: auto;width: 50%;max-width: 937px;margin-bottom: 40px;">
+                <section class="col-md-10" style="float: left; height: auto; padding: 0px;padding-bottom: 20px;">
+                    <div class="col-md-2 img" style="padding: 0;">
+                        <img v-bind:src="img"  class="one">
+                    </div>
+                    <div class="col-md-10" style="float: right;padding: 0;">
+                        <div class="col-md-12 name" style="padding: 0; margin-bottom: 10px;">
+                            <span style="font-weight: bold;">{{name}}</span>
+                        </div>
+                         <div class="col-md-12 position" style="text-align: left; ">
+                           <span class="job">{{job}}</span>
+                        </div>
+                        <div class="col-md-12 " style=" text-align: left; padding: 0;">
+                            <ul class="info" style="list-style: none; padding: 0;">
+                                <li style="float: left; margin-top: 10px;">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>{{email}} 
+                                </li>
+                                <li style="float: left; margin-top: 10px;">
+                                    <i class="fa fa-phone" aria-hidden="true"></i> {{phone}}
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="col-md-12" style="float: left; padding: 0;height: auto;">
+                    <div class="education">
+                        <span class="education_ba">
+                            <i class="fa fa-address-card-o fa-1" style="margin-right: 10px;"></i>{{education_ba}}
+                        </span>
+                        <hr / style="border-top: 1px solid #161515;">
+                    </div>
+                    <div class="col-md-12">
+                       <div class="col-md-12" v-for="date in education">
+                            <div class="col-md-6 three"><strong>{{date.school}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{date.region}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{date.time}}</strong></div>
+                            <div class="col-md-6 three"><strong>{{date.professional}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{date.degree}}</strong></div>
+							<div class="col-md-6 three"><strong>{{date.course}}</strong></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-12" style="float: left; padding: 0;height: auto;">
+                    <div class="education">
+                        <span class="education_ba"><i class="fa fa-building fa-1" style="margin-right: 10px;"></i>{{honor}}</span>
+                        <hr / style="border-top: 1px solid #161515;">
+                    </div>
+                     <div class="col-md-12" v-for="(date,index) in honor_info">
+                        <div class="col-md-4 three"><strong>{{index+1}}、{{date.honor}}</strong></div>
+                    </div>
+                </section>
+                <section class="col-md-12" style="float: left; padding: 0;height: auto;">
+                    <div class="education">
+                        <span class="education_ba"><i class="fa fa-users fa-1" style="margin-right: 10px;"></i>{{practice}}</span>
+                        <hr  style="border-top: 1px solid #161515;" />
+                    </div>
+                   
+                        <div class="col-md-12 three" >
+                            <ul class="info" v-for="date in practice_info">
+                                <li style="margin-top:20px;"><strong>{{date.practice}}</strong></li>
+                            </ul>
+                        </div>
+                       
+                    
+                </section>
+                <section class="col-md-12" style="float: left; padding: 0;height: auto;">
+                    <div class="education">
+                        <span class="user-o education_ba"><i class="fa fa-user-circle-o fa-1" style="margin-right: 10px;"></i>{{skills}}</span>
+                        <hr / style="border-top: 1px solid #161515;">
+                    </div>
+                    <div class="col-md-12 three" v-for="(date,index) in skills_info">
+                        <div class="col-md-6 three"><strong>{{index+1}}、{{date.skill}}</strong></div>
+                   
+                    </div>
+                </section>
+                <section class="col-md-12" style="float: left; padding: 0;height: auto;">
+                    <div class="education">
+                        <span class="education_ba"><i class="fa fa-tags fa-1" style="margin-right: 10px;"></i>{{evaluation}}</span>
+                        <hr / style="border-top: 1px solid #161515;">
+                    </div>
+                    <div class="col-md-12 three" style="text-align: left;">
+                        <ul class="info" v-for="date in evaluation_info">
+                            <li style="margin-top:20px;"><strong>{{date.evaluation}}</strong></li>
+                        </ul>
+                    </div>
+                </section>
+               
+            </div>
+        </div>
+		<script src="./js/main.js"></script>
+    </body>
+	
+ 
+	
+</html>
