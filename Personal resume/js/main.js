@@ -62,12 +62,12 @@ new Vue({
     skills_info : [
     {
     id : '1',
-    skill: '熟练的使用Java语言进行面向对象程序设计，有良好的编程习惯，熟练的使用HTML、CSS、JS、Jquery、Ajax和JSON等。',
+    skill: '基础扎实、熟练的使用HTML5与CSS3、DIV+CSS网页布局样式，掌握JavaScript语言、AJAX、JSON无刷新请求梳理。',
    
     },
     {
     id : '2',
-  skill:' 主要学习的语言是Java语言，学习过的前端框架有Jquery，Bootstrap，vue等，学习过的数据库有MySql和SqlServer，使用的开发工具: HBuilderX ，版本管理工具 : git。 '
+  skill:'会使用bootstrap、jQuery等前端框架，了解MVVM开发模式，对Vue有过一些简单的使用，会使用webpack打包和vue-cli创建项目，了解过uniapp,熟悉HBuilderX开发工具，使用过Git版本控制工具。 '
     },
     {
     id : '3',
