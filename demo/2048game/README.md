@@ -1,6 +1,6 @@
 # js实现2048小游戏 🎮
 
-演示地址：[https://nnngu.github.io/js_game_2048/index.html](https://nnngu.github.io/js_game_2048/index.html)
+演示地址：[https://Greenhand-wang.github.io/2048game/index.html](https://Greenhand-wang.github.io/2048game/index.html)
 
 ## 1、游戏简介
 
@@ -16,25 +16,21 @@
 
 目的是合并出 2048 这个数字，获得更高的分数。
 
-## 4、游戏截图
-
-![](https://raw.githubusercontent.com/nnngu/FigureBed/master/2018/2/9/Snip20180210_7.png)
-
-## 5、游戏实现原理
+## 4、游戏实现原理
 
 ### (1)首先，把16宫格看成是矩阵的形式
 
-![](https://raw.githubusercontent.com/nnngu/FigureBed/master/2018/2/9/Snip20180209_2.png)
+
 
 ### (2)在html中给每个格子添加类名及属性，来记录每个格子的位置
 
-![](https://raw.githubusercontent.com/nnngu/FigureBed/master/2018/2/9/Snip20180209_4.png)
+
 
 注：类名`item`是每个格子的类名，`emptyItem`是空格子的类名，`nonEmptyItem`是非空格子的类名。
 
 ### (3)游戏开始时，随机生成两个数字，2或者4，出现在矩阵中任意位置
    
-![](https://raw.githubusercontent.com/nnngu/FigureBed/master/2018/2/9/Snip20180209_5.png)
+
 
 这部分是通过类名`emptyItem`及`nonEmptyItem`来实现的。
 
@@ -98,7 +94,7 @@
  　 以上条件都不满足，Game Over! 
 ```
 
-源代码：[https://github.com/nnngu/js_game_2048](https://github.com/nnngu/js_game_2048)
+源代码：[https://github.com/Greenhand-wang/test/tree/master/demo/2048game](https://github.com/Greenhand-wang/test/tree/master/demo/2048game)
 
-演示地址：[https://nnngu.github.io/js_game_2048/index.html](https://nnngu.github.io/js_game_2048/index.html)
+演示地址：[https://Greenhand-wang.github.io/2048game/index.html](https://Greenhand-wang.github.io/2048game/index.html)
 

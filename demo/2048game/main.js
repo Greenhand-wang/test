@@ -121,7 +121,7 @@ $(function () {
         var items = $('.gameBody .row .item');
         //获取所有非空元素
         var nonEmptyItems = $('.gameBody .row .nonEmptyItem');
-        if (items.length == nonEmptyItems.length) {//所有元素的个数 == 所有非空元素的个数  即没有空元素
+        if (items.length == nonEmptyItems.length) { //所有元素的个数 == 所有非空元素的个数  即没有空元素
             //遍历所有非空元素
             for (var i = 0; i < nonEmptyItems.length; i++) {
                 var currentItem = nonEmptyItems.eq(i);

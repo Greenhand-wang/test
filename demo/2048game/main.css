@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #d7d3b6;
+    background: #706e5f;
 }
 
 .container {
@@ -46,13 +46,13 @@ body {
     padding: 15px;
     background: #999;
     border-radius: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    
 }
 
 .main .gameBody .row {
     display: flex;
     justify-content: space-between;
+	
 }
 
 .main .gameBody .row .item {
@@ -64,7 +64,7 @@ body {
     line-height: 70px;
     font-size: 30px;
     font-weight: bold;
-    margin: 5px;
+     margin: 5px;
     color: #666;
     font-family: "microsoft yahei";
 }
@@ -83,13 +83,13 @@ body {
 
 .main .gameScore span {
     color: red;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .main .scoreAndRefresh {
     display: flex;
     justify-content: space-around;
-    width: 280px;
+    width: 400px;
     margin: 0 auto;
 }
 
